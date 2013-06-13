@@ -3,8 +3,7 @@ Vimfiles
 
 My VIM startup files for backup and copying to other machines.
 
-VIM wont look inside vimfiles so set VIMINIT and GVIMINIT to point to _vimrc and
-_gvimrc in here:
-
-    VIMINT=so ~/vimfiles/.vimrc
-    GVIMINT=so ~/vimfiles/.gvimrc
+As of 7.3.1138 VIM will look inside the vimfiles directory for `vimrc` and
+`gvimrc`.
+So on Unix platforms just need to do `ln -s ~/vimfiles ~/.vim` and you are good
+to go.
