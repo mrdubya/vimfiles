@@ -120,6 +120,7 @@ let make_microsoft = 1
 
 " Python highlighting options
 let python_highlight_all = 1
+autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4
 
 " Setup my color scheme 
 set   background=dark 
@@ -127,7 +128,7 @@ set   background=dark
 colorscheme darkblue
 
 "
-source $VIMRUNTIME/macros/matchit.vim
+runtime macros/matchit.vim
 
 " Set up pathogen
 execute pathogen#infect()
