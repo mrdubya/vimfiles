@@ -5,6 +5,7 @@
 if has("win32")
   if has("directx")
     set   guifont=Source_Code_Pro:h9
+    set   linespace=0
     set   rop=type:directx,geom:1,renmode:4
   else
     set   guifont=Consolas:h10
