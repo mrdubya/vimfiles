@@ -3,13 +3,10 @@
 
 " Gui settings
 if has("win32")
-  if has("directx")
-    set   guifont=Source_Code_Pro:h9
-    set   linespace=0
-    set   rop=type:directx,geom:1,renmode:4
-  else
-    set   guifont=Consolas:h10
-  endif
+  " Preferred font and rendering
+  set   guifont=Source_Code_Pro:h9
+  set   linespace=0
+  set   rop=type:directx,geom:1,renmode:4,taamode:1
   " Maximise window
   au GUIEnter * simalt ~x
 elseif has("unix")

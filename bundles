@@ -1,15 +1,26 @@
-copyright-updater                                               
-cscope                                                          
-fileencoding                                                    
-jedi-vim                                                        
-mrw_dev                                                         
-nerdtree                                                        
-std_c                                                           
-tlib_vim                                                        
-vim-addon-mw-utils                                              
-vim-flake8                                                      
-vim-ps1                                                         
-vim-python-pep8-indent                                          
-vim-snipmate                                                    
-vim-snippets                                                    
-vimwiki                                                         
+bufexplorer - https://github.com/jlanzarotta/bufexplorer.git
+copyright-updater - https://github.com/mrdubya/copyright-updater.git
+cscope - https://github.com/mrdubya/vimfiles.git
+fileencoding - https://github.com/mrdubya/fileencoding.git
+jedi-vim - https://github.com/davidhalter/jedi-vim
+mrw_dev - https://github.com/mrdubya/vimfiles.git
+nerdtree - https://github.com/scrooloose/nerdtree
+showmarks - https://github.com/bootleq/ShowMarks.git
+std_c - https://MrDubya@bitbucket.org/MrDubya/std_c
+tlib_vim - https://github.com/tomtom/tlib_vim.git
+vim-addon-mw-utils - https://github.com/MarcWeber/vim-addon-mw-utils.git
+vim-flake8 - https://github.com/nvie/vim-flake8.git
+vim-ps1 - https://github.com/PProvost/vim-ps1.git
+vim-python-pep8-indent - https://github.com/hynek/vim-python-pep8-indent
+vim-snipmate - https://github.com/garbas/vim-snipmate
+vim-snippets - https://github.com/honza/vim-snippets.git
+vim-unittest - https://github.com/h1mesuke/vim-unittest
+vimwiki - https://github.com/vim-scripts/vimwiki
+
+NB
+Python plugins need following Python package installs
+. flake8
+. jedi
+. mccabe
+. pep8
+. pyflakes

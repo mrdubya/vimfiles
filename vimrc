@@ -120,7 +120,7 @@ let make_microsoft = 1
 
 " Python highlighting options
 let python_highlight_all = 1
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=8
 
 " Setup my color scheme 
 set   background=dark 
@@ -151,6 +151,14 @@ let asmsyntax="tasm"
 if has("unix")
   " Unix shell is bash
   let is_bash = 1
+endif
+
+if has("win32")
+  " MSVCRT only supports C89 time formatting and no timezone offset or
+  " abbreviation
+  iabbrev <expr> idtiso strftime("%Y-%m-%dT%H:%M:%S")
+elseif has("unix")
+  iabbrev <expr> idtiso strftime("%FT%T%z")
 endif
 
 command! SpellLegend2 noautocmd topleft new |
