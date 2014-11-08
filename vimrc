@@ -139,7 +139,7 @@ filetype plugin indent on
 try
   call copyright#UpdateFor("Mike Williams")
 catch
-  echomsg ".vimrc: copyright update plugin not installed."
+  echomsg "vimrc: copyright update plugin not installed."
 endtry
 
 " Slightly different Statusline including encoding status
