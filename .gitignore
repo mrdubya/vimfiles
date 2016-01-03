@@ -1,2 +1,6 @@
 # Transient files created in vimfiles
 .netrwhist
+after
+bundle
+plugin
+spell
