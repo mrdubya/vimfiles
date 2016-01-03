@@ -31,10 +31,6 @@ set   splitbelow
 set   visualbell
 set nowritebackup
 
-" Memory settings
-set   maxmem=2000000
-set   maxmemtot=2000000
-
 " Searching
 set   incsearch
 set   ignorecase
