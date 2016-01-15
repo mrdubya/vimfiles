@@ -8,12 +8,7 @@ set nocompatible
 set   bs=indent
 set   clipboard=unnamed
 set   complete=.,w,b,t
-if has("win32")
-  set   directory=$TEMP
-elseif has("unix")
-  " Don't create swap files in current directory
-  set directory-=.
-endif
+set   directory-=.
 set   dictionary+=~/vimfiles/dictionary
 set   display=lastline
 set   equalalways
