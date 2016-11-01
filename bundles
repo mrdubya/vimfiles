@@ -7,6 +7,7 @@ nerdtree - https://github.com/scrooloose/nerdtree
 showmarks - https://github.com/bootleq/ShowMarks.git
 std_c - https://MrDubya@bitbucket.org/MrDubya/std_c
 tlib_vim - https://github.com/tomtom/tlib_vim.git
+tmux.vim - https://github.com/keith/tmux.vim.git
 vim-addon-mw-utils - https://github.com/MarcWeber/vim-addon-mw-utils.git
 vim-flake8 - https://github.com/nvie/vim-flake8.git
 vim-ps1 - https://github.com/PProvost/vim-ps1.git
