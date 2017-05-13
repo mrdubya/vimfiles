@@ -140,8 +140,8 @@ set   statusline=%f\ %y%r%w[%{&ff}]%{StatusFileEncoding('%')}%m%=%l,%c%V\ %P
 let asmsyntax="tasm"
 
 if has("unix")
-  " Unix shell is bash
-  let is_bash = 1
+  " Unix shell is kornshell
+  let is_kornshell = 1
 endif
 
 if has("win32")
@@ -150,6 +150,12 @@ if has("win32")
   iabbrev <expr> idtiso strftime("%Y-%m-%dT%H:%M:%S")
 elseif has("unix")
   iabbrev <expr> idtiso strftime("%FT%T%z")
+endif
+
+if has("unix")
+  if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+  endif
 endif
 
 command! SpellLegend2 noautocmd topleft new |

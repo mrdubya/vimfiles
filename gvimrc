@@ -11,7 +11,7 @@ if has("win32")
   au GUIEnter * simalt ~x
 elseif has("unix")
   if has("gui_gtk")
-    set   guifont=Source\ Code\ Pro\ Medium\ 10
+    set   guifont=Source\ Code\ Pro\ Medium\ 9
   endif
 endif
 set   guioptions=M  " Ensures nothing is done about the GUI menu in menu.vim
