@@ -113,10 +113,8 @@ let make_microsoft = 1
 let python_highlight_all = 1
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=8
 
-" Setup my color scheme 
-set   background=dark 
-"colorscheme my_colors
-colorscheme darkblue
+" Setup my preferred color scheme
+colorscheme elflord
 
 "
 runtime macros/matchit.vim
@@ -152,10 +150,13 @@ elseif has("unix")
   iabbrev <expr> idtiso strftime("%FT%T%z")
 endif
 
+" Configure console colors where needed
 if has("unix")
   if $COLORTERM == 'gnome-terminal'
     set t_Co=256
   endif
+elseif has("win32")
+  set t_Co=256
 endif
 
 command! SpellLegend2 noautocmd topleft new |
