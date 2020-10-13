@@ -1,11 +1,11 @@
 bufexplorer - https://github.com/jlanzarotta/bufexplorer.git
 copyright-updater - https://github.com/mrdubya/copyright-updater.git
-cscope - https://github.com/mrdubya/vimfiles.git
+cscope - ...
 fileencoding - https://github.com/mrdubya/fileencoding.git
 jedi-vim - https://github.com/davidhalter/jedi-vim
 nerdtree - https://github.com/scrooloose/nerdtree
 showmarks - https://github.com/bootleq/ShowMarks.git
-std_c - https://MrDubya@bitbucket.org/MrDubya/std_c
+std_c - https://github.com/mrdubya/std_c.git
 tlib_vim - https://github.com/tomtom/tlib_vim.git
 tmux.vim - https://github.com/keith/tmux.vim.git
 vim-addon-mw-utils - https://github.com/MarcWeber/vim-addon-mw-utils.git
@@ -15,7 +15,7 @@ vim-python-pep8-indent - https://github.com/hynek/vim-python-pep8-indent
 vim-snipmate - https://github.com/garbas/vim-snipmate
 vim-snippets - https://github.com/honza/vim-snippets.git
 vim-unittest - https://github.com/h1mesuke/vim-unittest
-vimwiki - https://github.com/vim-scripts/vimwiki
+vimwiki - https://github.com/vimwiki/vimwiki.git
 
 NB
 Python plugins need following Python package installs
