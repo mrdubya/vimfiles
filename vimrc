@@ -113,6 +113,9 @@ let make_microsoft = 1
 let python_highlight_all = 1
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=8
 
+" Hg comment options
+autocmd FileType hgcommit setlocal spell textwidth=80
+
 " Setup my preferred color scheme
 colorscheme elflord
 
