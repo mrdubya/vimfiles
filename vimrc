@@ -153,12 +153,27 @@ elseif has("unix")
   iabbrev <expr> idtiso strftime("%FT%T%z")
 endif
 
+if has("win32")
+  if executable("PowerShell")
+    " Set PowerShell as the shell for running external ! commands
+    " http://stackoverflow.com/questions/7605917/system-with-powershell-in-vim
+    set shell=PowerShell
+    set shellcmdflag=-ExecutionPolicy\ RemoteSigned\ -Command
+    set shellquote=\"
+    " shellxquote must be a literal space character.
+    set shellxquote=
+  endif
+endif
+
 " Configure console colors where needed
 if has("unix")
   if $COLORTERM == 'gnome-terminal'
     set t_Co=256
   endif
 elseif has("win32")
+  if has("termguicolors") && has("vcon")
+    set termguicolors
+  endif
   set t_Co=256
 endif
 
