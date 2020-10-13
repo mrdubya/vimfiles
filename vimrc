@@ -23,7 +23,7 @@ set   path+=**
 set   ruler
 set noshiftround
 set   splitbelow
-set   visualbell
+"set   visualbell
 set nowritebackup
 
 " Searching
