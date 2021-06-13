@@ -61,6 +61,9 @@ if has("win32")
   set   suffixes-=.o
 " Remove a lot of VC from file lists
   set   suffixes+=.dsw,.dsp,.pdb,.idb,.pch,.ilk
+  set   wildignore+=*.exe,*.obj,*.lib,*.dll,*.pdb
+elseif has("unix")
+  set   wildignore+=*.o,*.a,*.so
 end
 " Remove some python files
 set   suffixes+=.pyc,.pyo
