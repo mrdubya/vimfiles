@@ -30,7 +30,7 @@ set   guioptions=M
 " Platform specific setup
 if has("win32")
   " Directx rendering
-  set rop=type:directx,geom:1,renmode:4,taamode:1
+  set rop=type:directx,geom:1,renmode:5,taamode:0
   " xterm style mouse
   set mousemodel=extend
   " Maximise window on start
