@@ -157,15 +157,14 @@ elseif has("unix")
 endif
 
 if has("win32")
-  if executable("PowerShell")
-    " Set PowerShell as the shell for running external ! commands
-    " http://stackoverflow.com/questions/7605917/system-with-powershell-in-vim
-    set shell=PowerShell
-    set shellcmdflag=-ExecutionPolicy\ RemoteSigned\ -Command
-    set shellquote=\"
-    " shellxquote must be a literal space character.
-    set shellxquote=
-  endif
+  " Disabled powershell as doesn't work with filters
+  "set shell=powershell.exe
+  "set shell=pwsh
+  "set shellcmdflag=-nop\ -nol\ -noni\ -ep\ RemoteSigned\ -c
+endif
+" Experimental - find what fails due to lack of type/encoding detection
+if has("filterpipe")
+  set noshelltemp
 endif
 
 " Configure console colors where needed
