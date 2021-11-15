@@ -118,6 +118,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=8
 
 " Hg comment options
 autocmd FileType hgcommit setlocal spell textwidth=80
+autocmd FileType gitcommit setlocal spell
 
 " Setup my preferred color scheme
 colorscheme elflord
